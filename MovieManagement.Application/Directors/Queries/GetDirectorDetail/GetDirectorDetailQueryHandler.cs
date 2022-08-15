@@ -23,7 +23,7 @@ namespace MovieManagement.Application.Directors.Queries.GetDirectorDetail
             var directorVm = new DirectorDetailVm()
             {
                 FullName = director.DirectorName.ToString(),
-                LastMovieName = director.Movies.OrderByDescending(p => p.PremiereYear).FirstOrDefault().Name
+                //LastMovieName = director.Movies.OrderByDescending(p => p.PremiereYear).FirstOrDefault().Name
             };
 
             return directorVm;
